@@ -1,0 +1,114 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(32, 72, 107);
+}
+.container {
+  width: 60%;
+  margin: auto;
+  background-color: white;
+  padding: 5% 3%;
+  border-radius: 8px;
+}
+
+.input-note {
+  width: 100%;
+  height: 10vh;
+  border-radius: 50px;
+  border: 1px solid black;
+  padding: 0.4%;
+  display: flex;
+}
+.input-note input[type="text"] {
+  width: 80%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #070707;
+  border-radius: 50px;
+  padding: 0rem 1rem;
+}
+.input-note input[type="button"] {
+  width: 20%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: rgb(32, 72, 107);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 50px;
+}
+#updateButton{
+  display: none;
+}
+#saveButton{
+  display: block;
+}
+.displayed-notes {
+  margin-top: 2rem;
+
+}
+ul {
+  list-style: none; /* Remove the default bullet */
+  margin: 0% 3%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 1rem;
+  padding: 0.6rem;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+ul li:hover {
+  background-color: #e5e3e320;
+}
+ul li::before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1.5px solid black;
+  position: absolute;
+  left: -25px;
+  top: 50%;             /* move from top */
+  transform: translateY(-50%); /* perfectly center it */
+}
+
+.second-li {
+  color: blueviolet;
+  background-color: blue;
+}
+
+.manageNote {
+  display: flex;
+  column-gap: 1rem;
+}
+.manageNote button {
+  padding: 0.4rem 0.3rem;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+}
+.editNote {
+  background-color: rgb(50, 81, 108);
+}
+.deleteNote {
+  background-color: #c55c5c;
+}
